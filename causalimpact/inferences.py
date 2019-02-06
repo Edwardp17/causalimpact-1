@@ -323,6 +323,8 @@ class Inferences(object):
             'post_cum_effects_lower',
             'post_cum_effects_upper'
         ]
+        
+        self.inferences.index = self.data.index
 
     def get_cum_index(self):
         """As the cumulative data has one more data point (the first zero point), we add
